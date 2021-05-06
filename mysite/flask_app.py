@@ -7,7 +7,7 @@ import hmac
 import hashlib
 import os
 
-w_secret = os.environ['GIT_TOKEN']
+w_secret = os.environ['SECRET_TOKEN']
 
 app = Flask(__name__)
 
