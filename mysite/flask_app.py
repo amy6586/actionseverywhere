@@ -28,7 +28,7 @@ def webhook():
     x_hub_signature = request.headers.get('X-Hub-Signature')
     if not is_valid_signature(x_hub_signature, request.data, w_secret):
         print('Deploy signature failed: {sig}'.format(sig=x_hub_signature))
-        abort(418)
+        #abort(418)
 
 
     if request.method == 'POST':
